@@ -1,6 +1,6 @@
 # Ada Functions API
 
-API REST desenvolvida com Azure Functions e Node.js para gerenciamento de produtos, com persistência em Azure SQL Database.
+Projeto final desenvolvido durante o curso da ADA, consistindo em uma API REST construída com Azure Functions e Node.js para gerenciamento de produtos, com os dados armazenados no Azure SQL Database.
 
 ## Tecnologias
 
@@ -46,3 +46,18 @@ Content-Type: application/json
 ```
 
 ## Estrutura do projeto
+
+```
+ada-functions/
+├── src/
+│   ├── shared/
+│   │   └── db.js            # Conexão com o banco de dados
+│   └── functions/
+│       ├── getAll.js        # GET /products
+│       ├── getById.js       # GET /products/{id}
+│       ├── create.js        # POST /products
+│       ├── update.js        # PUT /products/{id}
+│       └── deleteProduct.js # DELETE /products/{id}
+├── host.json
+└── package.json
+```
